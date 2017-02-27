@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 @Profile("production")
 public class DatabaseConfiguration {
-    private static MongoClientURI uri = new MongoClientURI("mongodb://krzysztof:jarzyna28@ds157829.mlab.com:57829");
+    private static MongoClientURI uri = new MongoClientURI("mongodb://krzysztof:jarzyna28@ds157829.mlab.com:57829/chat-api");
 
     private static final String DATABASE = "chat-api";
 
