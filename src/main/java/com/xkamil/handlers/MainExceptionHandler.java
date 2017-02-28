@@ -44,6 +44,6 @@ public class MainExceptionHandler {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public Message handle(BadRequestException ex) {
 
-        return new Message(ex.getMessage());gg
+        return new Message(ex.getMessage());
     }
 }
