@@ -47,5 +47,11 @@ public class UsersController {
         return userRepository.add(usernamem, password);
     }
 
+    @RequestMapping(value = "/me", method = RequestMethod.GET)
+    public User addUser(@RequestAttribute("user") User user) throws Exception {
+
+        return user;
+    }
+
 
 }
